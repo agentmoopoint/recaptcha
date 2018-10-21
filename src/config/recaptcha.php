@@ -16,6 +16,8 @@ return [
     'public_key'     => env('RECAPTCHA_PUBLIC_KEY', ''),
     'private_key'    => env('RECAPTCHA_PRIVATE_KEY', ''),
 
+    'api_url' => 'https://www.recaptcha.net/recaptcha/api/siteverify?',
+
     /*
     |--------------------------------------------------------------------------
     | Template

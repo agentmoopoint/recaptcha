@@ -24,7 +24,7 @@ class CheckRecaptchaV2 implements RecaptchaInterface
             'response' => $response,
         ]);
 
-        $url           = 'https://www.google.com/recaptcha/api/siteverify?' . $parameters;
+        $url           = value(app('config')->get('recaptcha.api_url')) . $parameters;
         $checkResponse = null;
 
         // prefer curl, but fall back to file_get_contents
